@@ -1,0 +1,246 @@
+{
+    "moduleList": [{
+            "name": "json-datasource",
+            "description": {
+                "en": "Get data from a json file",
+                "de": "Get data from a json file"
+            },
+            "configuration": {
+                "path": {
+                    "description": {
+                        "en": "Path of the json file",
+                        "de": "Path of the json file"
+                    },
+                    "value": "",
+                    "moreInfos": {
+                        "requireUpload": true
+                    }
+                },
+                "content": {
+                    "description": {
+                        "en": "Content of the json file",
+                        "de": "Content of the json file"
+                    },
+                    "value": ""
+                }
+            },
+            "structuredOutput": true
+        }, {
+            "name": "excel-datasource",
+            "description": {
+                "en": "Get data from an Excel sheet",
+                "de": "Get data from an Excel sheet"
+            },
+            "configuration": {
+                "filePath": {
+                    "description": {
+                        "en": "Uri/Path of the Excel file",
+                        "de": "Uri/Path of the Excel file"
+                    },
+                    "value": "",
+                    "moreInfos": {
+                        "requireUpload": true
+                    }
+                },
+                "sheetNumber": {
+                    "description": {
+                        "en": "Sheet Number",
+                        "de": "Sheet Number"
+                    },
+                    "value": ""
+                },
+                "password": {
+                    "description": {
+                        "en": "Excel file password (OPTIONAL)",
+                        "de": "Excel file password (OPTIONAL)"
+                    },
+                    "value": ""
+                },
+                "cellSeries": {
+                    "description": {
+                        "en": "Comma separated list or rage of columns/rows that represent the set of cells where the series of data are described",
+                        "de": "Comma separated list or rage of columns/rows that represent the set of cells where the series of data are described"
+                    },
+                    "value": ""
+                },
+                "cellValues": {
+                    "description": {
+                        "en": "Comma separated list or rage of columns/rows that represent the set of cells that contain the data of the series",
+                        "de": "Comma separated list or rage of columns/rows that represent the set of cells that contain the data of the series"
+                    },
+                    "value": ""
+                }
+            },
+            "structuredOutput": true
+        }, {
+            "name": "mssqlserver-datasource",
+            "description": {
+                "en": "Datasource for MS-SQLServer",
+                "de": "Datenquelle fÃ¼r MS-SQLServer"
+            },
+            "configuration": {
+                "host": {
+                    "description": {
+                        "en": "Server host",
+                        "de": "Server host"
+                    },
+                    "value": ""
+                },
+                "port": {
+                    "description": {
+                        "en": "Server port",
+                        "de": "Server port"
+                    },
+                    "value": ""
+                },
+                "database": {
+                    "description": {
+                        "en": "Database name",
+                        "de": "Database name"
+                    },
+                    "value": ""
+                },
+                "username": {
+                    "description": {
+                        "en": "Username",
+                        "de": "Username"
+                    },
+                    "value": ""
+                },
+                "password": {
+                    "description": {
+                        "en": "Password",
+                        "de": "Password"
+                    },
+                    "value": ""
+                },
+                "query": {
+                    "description": {
+                        "en": "Query",
+                        "de": "Query"
+                    },
+                    "value": ""
+                }
+            },
+            "structuredOutput": true
+        }, {
+            "name": "mysql-datasource",
+            "description": {
+                "en": "Datasource for MySQL",
+                "de": "Datenquelle fÃ¼r MySQL"
+            },
+            "configuration": {
+                "host": {
+                    "description": {
+                        "en": "Server host",
+                        "de": "Server host"
+                    },
+                    "value": ""
+                },
+                "port": {
+                    "description": {
+                        "en": "Server port",
+                        "de": "Server port"
+                    },
+                    "value": ""
+                },
+                "database": {
+                    "description": {
+                        "en": "Database name",
+                        "de": "Database name"
+                    },
+                    "value": ""
+                },
+                "username": {
+                    "description": {
+                        "en": "Username",
+                        "de": "Username"
+                    },
+                    "value": ""
+                },
+                "password": {
+                    "description": {
+                        "en": "Password",
+                        "de": "Password"
+                    },
+                    "value": ""
+                },
+                "query": {
+                    "description": {
+                        "en": "Query",
+                        "de": "Query"
+                    },
+                    "value": ""
+                }
+            },
+            "structuredOutput": true
+        }, {
+            "name": "rest-datasource",
+            "description": {
+                "en": "Get data from a REST service",
+                "de": "Get data from a REST service"
+            },
+            "configuration": {
+                "endpoint": {
+                    "description": {
+                        "en": "Url of the REST service",
+                        "de": "Url of the REST service"
+                    },
+                    "value": ""
+                },
+                "method": {
+                    "description": {
+                        "en": "Http connection method: POST/GET",
+                        "de": "Http connection method: POST/GET"
+                    },
+                    "value": ""
+                },
+                "requestedContentType": {
+                    "description": {
+                        "en": "Http request content type",
+                        "de": "Http request content type"
+                    },
+                    "value": ""
+                },
+                "querystring": {
+                    "description": {
+                        "en": "Query string",
+                        "de": "Query string"
+                    },
+                    "value": ""
+                },
+                "postData": {
+                    "description": {
+                        "en": "Data to post (only when method=POST)",
+                        "de": "Data to post (only when method=POST)"
+                    },
+                    "value": ""
+                }
+            },
+            "structuredOutput": false
+        }, {
+            "name": "triplestore-datasource",
+            "description": {
+                "en": "Get data from a triple store",
+                "de": "Get data from a triple store"
+            },
+            "configuration": {
+                "endpoint": {
+                    "description": {
+                        "en": "Url of the triple store",
+                        "de": "Url of the triple store"
+                    },
+                    "value": ""
+                },
+                "sparqlQuery": {
+                    "description": {
+                        "en": "SPARQL Query",
+                        "de": "SPARQL Query"
+                    },
+                    "value": ""
+                }
+            },
+            "structuredOutput": true
+        }
+    ]
+}
