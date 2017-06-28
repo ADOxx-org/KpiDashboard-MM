@@ -8,6 +8,7 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
 import java.io.StringReader;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
@@ -172,7 +173,7 @@ public class DashboardHelper {
                         try {
                             ArrayList<String[]> htmlHeaderList = new ArrayList<String[]>();
                             htmlHeaderList.add(new String[]{"Content-Type", "application/octet-stream"});
-                            String uploadRes = new String(Utils.sendHTTP(hostNameF + dashboardRestEndpoint + "/uploadLocalDatasource?fileName="+file.getName(), "POST", Utils.readFile(file), htmlHeaderList, true, true).data, "UTF-8");
+                            String uploadRes = new String(Utils.sendHTTP(hostNameF + dashboardRestEndpoint + "/uploadLocalDatasource?fileName="+URLEncoder.encode(file.getName(), "UTF-8"), "POST", Utils.readFile(file), htmlHeaderList, true, true).data, "UTF-8");
                             txt.setText(uploadRes);
                         } catch (Exception ex) {
                             ex.printStackTrace();
