@@ -12,3 +12,5 @@ In particular this project include:
 The final ABL library containing all the previous mentioned component, is provided.
 
 More informations are available in the [wiki](../../wiki)
+
+![](https://user-images.githubusercontent.com/29372157/27425799-76c5405a-56ee-11e7-841f-7bfce03f3520.png)
